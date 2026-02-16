@@ -1,0 +1,26 @@
+{% load static %}
+<nav class="navbar">
+  <a href="{% url 'home' %}" class="logo-container">
+    <img src="{% static 'images/logo.png' %}" alt="Harikrushna Logo" class="nav-logo">
+  </a>
+
+  <button class="menu-toggle" aria-label="Toggle menu">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+
+  <div class="nav-links">
+    <a href="{% url 'home' %}" class="nav-item">Home</a>
+    <a href="{% url 'home' %}#about-us" class="nav-item">About</a>
+    <a href="{% url 'courses' %}" class="nav-item">Course</a>
+    <a href="{% url 'events' %}" class="nav-item">Event</a>
+    <a href="{% url 'home' %}#portfolios" class="nav-item">Portfolios</a>
+    <a href="{% url 'contacts' %}" class="nav-item">Contact</a>
+    <a href="{% static 'pdfs/Brochure_2026.pdf' %}" class="nav-brochure" download>
+      <i class="fa-solid fa-download"></i>
+      <span>Brochure</span>
+    </a>
+    <a href="{% url 'contacts' %}#get-in-touch" class="nav-cta">Get In Touch</a>
+  </div>
+</nav>
