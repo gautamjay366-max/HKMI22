@@ -136,7 +136,7 @@
             display: inline-block;
             color: #e63946;
             border: 1px solid #e63946;
-            padding: 10px 20px;
+            padding: 10px 15px;
             margin-top: 15px;
             text-decoration: none;
             transition: 0.3s;
@@ -197,6 +197,16 @@
             opacity: 0;
             filter: blur(12px);
             transform: translateY(40px) rotateX(-90deg);
+        }
+
+        .email-link {
+            color: #aaa;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .email-link:hover {
+            color: #e63946;
         }
 
         .reveal-active .gaming-char {
@@ -279,7 +289,7 @@
 
                     <p>
                         <i class="fas fa-envelope email-icon"></i>
-                        <a href="mailto:info@hkm.edu">harikrushnamultimedia@gmail.com</a>
+                        <a href="mailto:info@hkm.edu" class="email-link">harikrushnamultimedia@gmail.com</a>
                     </p>
                 </div>
                 <a href="#" class="btn-verify anim-text">Verify Student Certificate</a>
