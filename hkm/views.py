@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from apps.events.models import Contact
+from .models import Contact
 from django.core.mail import send_mail
 from django.conf import settings
 
@@ -7,6 +7,9 @@ from django.conf import settings
 
 def home(request):
     return render(request,'pages/index.html')
+
+def about_us(request):
+    return render(request, 'pages/aboutus.html')
 
 
 def contacts(request):
